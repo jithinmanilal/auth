@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Auth site | Dashboard
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="arial textcol">Dashboard Page</h1>
+    <h3 class="lucida">Hi {{request.user.first_name}}</h3>
+    <p class="courier">
+        Welcome to your personal dashboard.
+    </p>
+</div>
+
+{% endblock %}
